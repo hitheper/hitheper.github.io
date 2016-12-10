@@ -12,5 +12,6 @@
 - 添加tmux,screen.connectbot,wikipedia，glgoo,scholarnet,yandex,gycc,quora,mutt
 - 修改“使用说明”
 - 添加陈建义和赫荣华的博客链接，顺便偷几个网址过来
+- 添加posts文件夹
 ### 20161210 曲岳峤
 - 添加一个资源
