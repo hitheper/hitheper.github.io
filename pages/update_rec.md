@@ -9,7 +9,7 @@
 - 在index.html 添加英语
  ### 20161210 赵荣
 - 添加“更新记录”页面
-- 添加tmux,screen.connectbot,wikipedia，glgoo,scholarnet,yandex,gycc,quora,mutt
+- 添加tmux  screen connectbot wikipedia glgoo scholarnet yandex  gycc quora  mutt
 - 修改“使用说明”
 - 添加陈建义和赫荣华的博客链接，顺便偷几个网址过来
 - 添加posts文件夹
