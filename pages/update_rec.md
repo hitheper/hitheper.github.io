@@ -5,9 +5,9 @@
  - 上传原始网站
  - 增加“关于”和“使用说明”页面
  - 修改了部分错误链接
- ### 20161209 谭啸泽
+### 20161209 谭啸泽
 - 在index.html 添加英语
- ### 20161210 赵荣
+### 20161210 赵荣
 - 添加“更新记录”页面
 - 添加tmux  screen connectbot wikipedia glgoo scholarnet yandex  gycc quora  mutt
 - 修改“使用说明”
@@ -19,3 +19,5 @@
 - 添加一个资源
 ### 20161212 张翔科
 - 添加了一个资源
+### 20161216 Tan Xiaoze
+- 添加部分关于fanqiang的超链接和内容
