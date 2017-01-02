@@ -1,6 +1,6 @@
 这是一个设置快捷访问的小工具，你只要在对应的按键处输入网址并保存，下次就可以直接访问。
 - 你可以将此页面收藏或者设置成主页
-- 或者直接（从https://github.com/hitheper/hitheper.github.io）下载这个网页文件夹，在本地运行或者编辑。
+- 或者直接从[这里](https://github.com/hitheper/hitheper.github.io/)下载这个网页文件夹，在本地运行或者编辑。
 - 如果你需要更多的使用特性，建议使用专业的键盘映射工具～
 - 找不到原作者了，仅供个人使用，请不要用于其他
 # have fun with this!
