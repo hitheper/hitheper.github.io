@@ -13,3 +13,25 @@
  初学的时候最好不要直接读UserGuide，这样效率会比较低；最好先看看别人怎么操作，然后学一些入门的教程。
 # 一些要点
 先从整体上掌握模拟的思路和框架，然后读一些example的代码，理解具体的实现过程。
+useful commands
+```shell
+/gun/particle proton   设定粒子
+/gun/energy 2 GeV    设定粒子能量
+/run/beamOn 10     粒子束流
+```
+```shell
+/vis/viewer/set/viewpointVector -.5 .3 .5   视角矢量
+/vis/viewer/set/lightVector -1 1 -1    照明光线方向
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtSize 2   step标记的大小
+/vis/modeling/trajectories/list   径迹设置
+/vis/set/text/Colour green   文字颜色
+```
+```shell
+/vis/scene/add/scale   标度
+/vis/scene/add/axes   坐标轴
+/vis/scene/add/eventID  事件ID
+/vis/scene/add/date  日期
+/vis/scene/add/logo   3Dlogo
+/vis/scene/add/logo  简单logo
+```
