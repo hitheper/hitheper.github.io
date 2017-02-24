@@ -1,5 +1,8 @@
 # 导航页面使用说明
-如果这个网站对你有帮助，请一起加入我们，在这里添加更多有用的信息，谢谢！
+###### 如果网站的有些条目你打不看，很可能是你没有[翻墙](http://hithep.science/posts/fan_qiang.md.html)!
+###### 如果网站的有些条目你打不看，很可能是你没有[翻墙](http://hithep.science/posts/fan_qiang.md.html)!
+###### 如果网站的有些条目你打不看，很可能是你没有[翻墙](http://hithep.science/posts/fan_qiang.md.html)!
+`如果这个网站对你有帮助，请一起加入我们，在这里添加更多有用的信息，谢谢！`
 ## 如何添加条目
 `在修改之前，请务必确保你已经了解git的工作原理或者有git使用经验，避免破坏原有数据。`
 请先申请自己的github账号，然后fork这个项目，提交pull requrest或者branch。详细方法请参考git的教程。
