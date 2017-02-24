@@ -1,5 +1,6 @@
-# 教程
-这里面的教程不错，详细研究一遍会有很多收获：
+# 教程以下
+以下教程还不错，详细研究一遍会有很多收获：
+* http://geant4.in2p3.fr/spip.php?article84
 * https://www.ge.infn.it/geant4/events/nss2013/geant4course.html
 * http://geant4.lngs.infn.it/courseBelfast2014/exercises/html/introduction/index.html
 * http://geant4.lngs.infn.it/AlgheroSeminar2016/introduction/index.html
