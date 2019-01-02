@@ -6,7 +6,7 @@
  - 增加“关于”和“使用说明”页面
  - 修改了部分错误链接
 
-### 20161209 谭啸泽
+### 20161209 Tan Xiaoze
 - 在index.html 添加英语
 
 ### 20161210 赵荣
@@ -30,6 +30,12 @@
 ### 20161227 Tan Xiaoze
 - 在其它分类里添加两个网页链接
 - 在论文写作里添加条目
+
 ### 20170101 赵荣
 - 添加miniPC
 - 修改一些错误链接
+
+### 20190102 Tan Xiaoze
+- 添加 hithesis、hithesis-alpha 哈工大LaTeX论文模板链接
+- 添加 LabXing Paper论文查找下载、LetPub最新SCI影响因子查询、地球风图 等链接
+- 添加 [不蒜子](http://busuanzi.ibruce.info/) 站点计数
