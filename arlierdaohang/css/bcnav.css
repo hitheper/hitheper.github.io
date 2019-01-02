@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f8f8f8;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+}
+
+#keyboard {
+  width: 1000px;
+  height: 415px;
+  background: #bbb;
+  margin: 20px auto 10px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.27, #d4d8db), color-stop(0.64, #d5d9dc), color-stop(0.95, #e6e9eb), color-stop(1, #bfbfbf));
+  background-image: -moz-linear-gradient(bottom, #d4d8db 27%, #d5d9dc 64%, #e6e9eb 95%, #bfbfbf 100%);
+  border-top-left-radius: 7px 21px;
+  border-top-right-radius: 7px 21px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-border-top-left-radius: 7px 21px;
+  -webkit-border-top-right-radius: 7px 21px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 7px 21px;
+  -moz-border-radius-topright: 7px 21px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  padding: 50px 0 0;
+  position: relative;
+  -webkit-box-shadow: inset 0 0 8px #bbb, 0 1px 0 #aaa, 0 4px 0 #bbb, 0 10px 30px #ddd;
+  -moz-box-shadow: inset 0 0 8px #bbb, 0 1px 0 #aaa, 0 4px 0 #bbb, 0 10px 30px #ddd;
+  box-shadow: inset 0 0 8px #bbb, 0 1px 0 #aaa, 0 4px 0 #bbb, 0 10px 30px #ddd;
+}
+
+ul {
+  list-style: none;
+  width: 896px;
+  margin: 0 auto;
+}
+
+li {
+  float: left;
+  padding-bottom: 8px;
+  position: relative;
+}
+li img.fav {
+  position: absolute;
+  bottom: 14px;
+  left: 7px;
+  width: 16px;
+  height: 16px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  opacity: .7;
+  -webkit-box-shadow: 0 1px 2px #333 inset;
+  -moz-box-shadow: 0 1px 2px #333 inset;
+  box-shadow: 0 1px 2px #333 inset;
+}
+li .oper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+}
+li .oper .delete {
+  position: absolute;
+  left: 7px;
+  top: 0px;
+}
+li .oper .editd {
+  position: absolute;
+  left: 40px;
+  top: 0px;
+}
+li .oper span a {
+  display: inline-block;
+}
+li .oper span a img {
+  width: 16px;
+  height: 16px;
+}
+
+.key {
+  display: block;
+  color: #aaa;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  width: 52px;
+  height: 46px;
+  margin: 5px;
+  background: #eff0f2;
+  border-top: 1px solid #f5f5f5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333;
+  -moz-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333;
+  box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333;
+}
+.key:active, .key.keydown {
+  color: #888;
+  background: #ebeced;
+  -webkit-box-shadow: inset 0 0 25px #ddd, 0 0 3px #333;
+  -moz-box-shadow: inset 0 0 25px #ddd, 0 0 3px #333;
+  box-shadow: inset 0 0 25px #ddd, 0 0 3px #333;
+  border-top: 1px solid #eee;
+}
+
+.fn span {
+  display: block;
+  margin: 14px 5px 0 0;
+  text-align: right;
+  font-size: 9px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#esc {
+  font-size: 11px;
+  margin: 6px 17px 0 0;
+  text-transform: lowercase;
+}
+
+#numbers li {
+  position: relative;
+}
+#numbers li a span {
+  display: block;
+}
+#numbers li a b {
+  display: block;
+  margin: 3px 0 3px;
+}
+#numbers li .alt b {
+  display: block;
+  margin: 0 0 3px;
+}
+#numbers li #delete span {
+  text-align: right;
+  margin: 23px 10px 0 0;
+  font-size: 9px;
+  text-transform: lowercase;
+}
+
+#qwerty li a span {
+  display: block;
+  margin: 13px 0 0;
+  text-transform: uppercase;
+}
+#qwerty li #tab span {
+  text-align: left;
+  margin: 23px 0 0 10px;
+  font-size: 9px;
+  text-transform: lowercase;
+}
+#qwerty li .alt b {
+  display: block;
+  margin: 3px 0 0;
+}
+#qwerty li .alt span {
+  display: block;
+  margin: 2px 0 0;
+}
+
+#asdfg li a span {
+  display: block;
+  margin: 13px 0 0;
+  text-transform: uppercase;
+}
+#asdfg li .alt span {
+  margin: 0;
+  text-transform: lowercase;
+}
+#asdfg li .alt b {
+  display: block;
+  margin: 3px 0 0;
+}
+#asdfg li #caps b {
+  display: block;
+  background: #999;
+  width: 4px;
+  height: 4px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  margin: 9px 0 0 10px;
+  -webkit-box-shadow: 0 1px 0 #666 inset;
+  -moz-box-shadow: 0 1px 0 #666 inset;
+  box-shadow: 0 1px 0 #666 inset;
+}
+#asdfg li #caps span {
+  text-align: left;
+  margin: 10px 0 0 10px;
+  font-size: 9px;
+}
+#asdfg li #enter b {
+  text-align: right;
+  font-size: 9px;
+  margin: 9px 10px 0 0;
+}
+#asdfg li #enter span {
+  text-align: right;
+  margin: 9px 10px 0 0;
+  font-size: 11px;
+}
+
+#zxcvb li a span {
+  display: block;
+  margin: 13px 0 0;
+  text-transform: uppercase;
+}
+#zxcvb li .shiftleft span {
+  text-align: left;
+  margin: 23px 0 0 10px;
+  font-size: 9px;
+  text-transform: lowercase;
+}
+#zxcvb li .shiftright span {
+  text-align: right;
+  margin: 23px 10px 0 0;
+  font-size: 9px;
+  text-transform: lowercase;
+}
+#zxcvb li .alt b {
+  display: block;
+  margin: 4px 0 0;
+}
+#zxcvb li .alt span {
+  margin: 0;
+}
+
+#bottomrow li #fn span, #bottomrow li #control span, #bottomrow li #commandleft span {
+  display: block;
+  text-align: left;
+  margin: 31px 0 0 8px;
+  font-size: 9px;
+  text-transform: lowercase;
+}
+#bottomrow li #optionleft b {
+  display: block;
+  font-size: 9px;
+  text-align: left;
+  margin: 5px 0px 0px 5px;
+}
+#bottomrow li #optionleft span {
+  display: block;
+  text-align: left;
+  margin: 16px 0 0 5px;
+  font-size: 9px;
+  text-transform: lowercase;
+}
+#bottomrow li #commandright span {
+  display: block;
+  text-align: right;
+  margin: 31px 8px 0 0;
+  font-size: 9px;
+  text-transform: lowercase;
+}
+#bottomrow li #optionright b {
+  display: block;
+  font-size: 9px;
+  text-align: right;
+  margin: 5px 5px 0 0;
+}
+#bottomrow li #optionright span {
+  display: block;
+  text-align: right;
+  margin: 16px 5px 0 0;
+  font-size: 9px;
+  text-transform: lowercase;
+}
+#bottomrow ol {
+  list-style: none;
+}
+#bottomrow ol li #left span, #bottomrow ol li #right span, #bottomrow ol li #up span, #bottomrow ol li #down span {
+  display: block;
+  margin: 9px 0 0;
+}
+
+.fn {
+  height: 28px;
+  width: 54px;
+}
+
+#delete {
+  width: 80px;
+}
+
+#tab {
+  width: 80px;
+}
+
+#caps {
+  width: 96px;
+}
+
+#enter {
+  width: 96px;
+}
+
+.shiftleft, .shiftright {
+  width: 127px;
+}
+
+#fn, #control, .option, .command, #spacebar {
+  height: 49px;
+}
+
+#control {
+  width: 56px;
+}
+
+.option {
+  width: 46px;
+}
+
+.command {
+  width: 67px;
+}
+
+#spacebar {
+  width: 305px;
+}
+
+#down {
+  height: 23px;
+  font-size: 8px;
+}
+
+#up, #left, #right {
+  height: 24px;
+  font-size: 8px;
+}
+
+#left, #right {
+  margin: 30px 5px 5px;
+}
+#left:active, #right:active {
+  margin: 32px 5px 3px;
+}
+
+#up {
+  margin: 5px 5px 1px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+#up:active {
+  margin: 8px 5px -2px;
+}
+
+#down {
+  margin: 0 5px 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+#down:active {
+  margin: 3px 5px 4px;
+}
+
+#message {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  visibility: hidden;
+}
+
+/*adsense*/
+.adsense {
+  text-align: center;
+}
+
+.adsense h2 {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.adsense .ads {
+  margin-bottom: 10px;
+}
+
+#desc {
+  position: absolute;
+  bottom: 8px;
+  left: 56px;
+  font-size: 13px;
+  color: #fafafa;
+  text-shadow: 1px 1px 1px #000;
+}
