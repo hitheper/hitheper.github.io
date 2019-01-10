@@ -1,0 +1,396 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>校园网ipv6-hosts指南</title>
+<style>
+html,body{ font-family: "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+  font-size: 16px;
+  color:#222
+  -webkit-text-size-adjust:none;  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto; padding: 1rem;
+  line-height: 1.5rem;
+
+}
+h1,h2,h3,h4,h5,h6{font-family: "PT Sans","SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+text-rendering:optimizelegibility;margin-bottom:1em;font-weight:bold; line-height: 1.8rem;
+
+}
+h1,h2{position:relative;padding-top:1rem;padding-bottom:0.2rem;margin-bottom:1rem;
+border-bottom: solid 1px #eee;  
+}
+h2{padding-top:0.8rem;padding-bottom:0.2rem;}
+h1{ font-size: 1.6rem;}
+h2{ font-size: 1.4rem;}
+h3{ font-size: 1.2rem;}
+h4{ font-size: 1.1rem;}
+h5{ font-size: 1.0rem;}
+h6{ font-size: 0.9rem;}
+
+table{border-collapse:collapse;border-spacing:0;
+  margin-top: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+tr{  background-color: #fff;
+  border-top: 1px solid #ccc;}
+th,td{padding: 5px 14px;
+  border: 1px solid #ddd;}
+
+blockquote{font-style:italic;font-size:1.1em;line-height:1.5em;padding-left:1em; border-left:4px solid #D5D5D5;    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem; }
+
+a{color:#1863a1}
+a:hover{color: #1b438d;}
+pre,code,p code,li code{font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace}
+
+pre{-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;border:1px solid #e7dec3;line-height:1.45em;font-size:0.9rem;margin-bottom:2.1em;padding:.8em 1em;color:#586e75;overflow:auto; background-color:#fdf6e3;}
+
+:not(pre) > code{display:inline-block;text-indent:0em;white-space:no-wrap;background:#fff;font-size:0.9rem;line-height:1.5em;color:#555;border:1px solid #ddd;-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;padding:0 .3em;margin:-1px 4px;}
+pre code{font-size:1em !important;background:none;border:none}
+
+img{max-width:100%;padding: 8px 0px;}
+
+
+hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* PrismJS 1.14.0
+https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+css+clike+javascript */
+/*
+ Solarized Color Schemes originally by Ethan Schoonover
+ http://ethanschoonover.com/solarized
+
+ Ported for PrismJS by Hector Matos
+ Website: https://krakendev.io
+ Twitter Handle: https://twitter.com/allonsykraken)
+*/
+
+/*
+SOLARIZED HEX
+--------- -------
+base03    #002b36
+base02    #073642
+base01    #586e75
+base00    #657b83
+base0     #839496
+base1     #93a1a1
+base2     #eee8d5
+base3     #fdf6e3
+yellow    #b58900
+orange    #cb4b16
+red       #dc322f
+magenta   #d33682
+violet    #6c71c4
+blue      #268bd2
+cyan      #2aa198
+green     #859900
+*/
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #657b83; /* base00 */
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  background: #073642; /* base02 */
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background: #073642; /* base02 */
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: #fdf6e3; /* base3 */
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #93a1a1; /* base1 */
+}
+
+.token.punctuation {
+  color: #586e75; /* base01 */
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #268bd2; /* blue */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.url,
+.token.inserted {
+  color: #2aa198; /* cyan */
+}
+
+.token.entity {
+  color: #657b83; /* base00 */
+  background: #eee8d5; /* base2 */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #859900; /* green */
+}
+
+.token.function,
+.token.class-name {
+  color: #b58900; /* yellow */
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #cb4b16; /* orange */
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+    .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+    }
+
+        .line-numbers-rows > span:before {
+            content: counter(linenumber);
+            color: #999;
+            display: block;
+            padding-right: 0.8em;
+            text-align: right;
+        }
+
+
+
+</style>
+
+<style> @media print{ code[class*="language-"],pre[class*="language-"]{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<h1 id="toc_0">校园网ipv6-hosts指南</h1>
+
+<p>本页简单介绍了在哈工大校园网范围内使用ipv6，以及借助hosts进行科.学.上.网的方法。</p>
+
+<p><em>声明：本页旨在交流经验，方便学习生活，请合法使用互联网服务，自行辨别互联网信息，不盲目轻信互联网言论，养成独立思考的习惯。</em></p>
+
+<ul>
+<li>
+<a href="#toc_0">校园网ipv6-hosts指南</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_1">首先，什么是ipv6？</a>
+</li>
+<li>
+<a href="#toc_2">什么是hosts文件？</a>
+</li>
+<li>
+<a href="#toc_3">为什么要使用ipv6？</a>
+</li>
+<li>
+<a href="#toc_4">如何使用ipv6？</a>
+</li>
+<li>
+<a href="#toc_5">借助ipv6-hosts实现 科.学.上.网</a>
+<ul>
+<li>
+<a href="#toc_6">hosts文件位置</a>
+</li>
+<li>
+<a href="#toc_7">修改hosts后生效方法</a>
+</li>
+<li>
+<a href="#toc_8">ipv6-hosts的获取</a>
+</li>
+<li>
+<a href="#toc_9">可能出现的问题</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h3 id="toc_1">首先，什么是ipv6？</h3>
+
+<p>ipv6简单来说就是“互联网协议版本6”，我们目前广泛使用的是ipv4，关于其详细介绍可以参考百度或者以下链接-<a href="http://www.edu.cn/info/ip6/zs/v6/201201/t20120113_731784.shtml">ipv6-用不完的门牌号</a></p>
+
+<h3 id="toc_2">什么是hosts文件？</h3>
+
+<p>目前我们的万维网依赖<a href="https://baike.baidu.com/item/dns/427444?fr=aladdin">DNS</a>系统来使各主机、终端之间方便的互联，而hosts文件简单来说就是一个将网址域名与对应ip地址建立关联的一个本地文件，详情可以参考<a href="https://baike.baidu.com/item/hosts/10474546?fr=aladdin">百度百科-hosts</a></p>
+
+<h3 id="toc_3">为什么要使用ipv6？</h3>
+
+<p>ipv6对于我们普通用户来说，两个简单的用途：1. <strong>科.学.上.网</strong>，毕竟科研、学习离不开Google，YouTube等视频网站也有很多高质量的视频资源，使用Facebook等社交媒体与国外同学沟通交流；2. 访问六维等pt站点，高速下载影视资源(但请自辨版权)，而这些pt站点只能通过ipv6访问; 3. 访问一些ipv6直播站，可以访问一些ipv6直播服务，观看电视节目......</p>
+
+<h3 id="toc_4">如何使用ipv6？</h3>
+
+<p>其实，<strong>中国教育和科研计算机网CERNET</strong>早就接入并支持了ipv6，而窝工又是CERNET的重要节点，所以在窝工校园网范围内是已经支持ipv6的，但使用ipv6还需要路由器、终端设备的支持。</p>
+
+<p>对于PC、笔记本来说，最新的Windows系统、较新的Linux发行版、macOS等都默认支持ipv6协议，而老的WinXP系统可能需要手动安装ipv6协议；而对于移动网络的手机等设备，目前国内三大运营商的4G网络基本都已支持ipv6协议，但一些手机品牌，可能需要前往APN设置，设置开启ipv4/ipv6双协议支持。</p>
+
+<p>而对于路由器来说，目前支持ipv6比较简单的路由器有<em>极路由</em>，通过安装教育网ipv6插件(默认配置即可)即可获得ipv6支持，或者购买水星、华硕等路由器，刷openwrt固件获得ipv6的支持。</p>
+
+<p><strong>而在校内，登录使用</strong>HIT-Wlan<strong>的无线网络，也是支持ipv6协议</strong>的(不过刚登陆后分配地址需要一段时间，稍等一会就好)；另外，<strong>高能物理实验室已支持ipv6</strong>，使用的是Buffalo一款老路由器，有线、无线设备均可获得ipv6支持。</p>
+
+<p>窝工的ipv4/ipv6地址段，可以通过<a href="http://ito.hit.edu.cn/wlgl/list.htm">网络中心主页查询</a>查询。</p>
+
+<p>此时，Windows用户可以使用命令<code>ipconfig /all</code>(Linux、macOS用户<code>ifconfig</code>)来查看本机是否获取了ipv6地址，也可以使用ipv6测试站点来判断是否已经成功接入ipv6网络：<a href="http://www.test-ipv6.com/">ipv6-test</a><br/>
+测试通过如图所示：<br/>
+<img src="https://res.cloudinary.com/regulus/image/upload/v1547126528/Github/ipv6-test.jpg" alt=""/></p>
+
+<h3 id="toc_5">借助ipv6-hosts实现 科.学.上.网</h3>
+
+<p>实际上，之前ipv4时代，也可以通过<a href="https://laod.cn/hosts/2018-google-hosts.html">ipv4的hosts</a>实现科.学.上.网，不过随着GFW升级，解析筛选出来的ipv4-hosts基本都是“见光死”，而因为现有ipv6服务开展还没有那么广泛，GFW对于ipv6-hosts的态度属于“睁一只眼闭一只眼”，所以使用ipv6-hosts相对稳定，并且流量走ipv6通道，在校园网环境中，观看YouTube视频等可以获得很好的网速体验(最好时曾hold住4K视频在线播放)。</p>
+
+<h4 id="toc_6">hosts文件位置</h4>
+
+<ul>
+<li>Windows 系统hosts位于 <code>C:\Windows\System32\drivers\etc\hosts</code></li>
+<li>Android（安卓）系统hosts位于 <code>/etc/hosts</code></li>
+<li>Mac（苹果电脑）系统hosts位于 <code>/etc/hosts</code></li>
+<li>iPhone（iOS）系统hosts位于 <code>/etc/hosts</code></li>
+<li>Linux系统hosts位于 <code>/etc/hosts</code><br/>
+绝大多数Unix系统都是在 <code>/etc/hosts</code></li>
+</ul>
+
+<h4 id="toc_7">修改hosts后生效方法</h4>
+
+<ul>
+<li>Windows 开始 -&gt; 运行 -&gt; 输入cmd -&gt; 在命令行窗口输入
+<code>ipconfig /flushdns</code></li>
+</ul>
+
+<ul>
+<li><p>Linux终端输入<br/>
+<code>sudo rcnscd restart</code><br/>
+对于systemd发行版，请使用命令<br/>
+<code>sudo systemctl restart NetworkManager</code><br/>
+如果不懂请都尝试下</p></li>
+<li><p>Mac OS X终端输入<br/>
+<code>sudo killall -HUP mDNSResponder</code></p></li>
+</ul>
+
+<p><em>最简单的方式，重启或者注销登录！</em></p>
+
+<h4 id="toc_8">ipv6-hosts的获取</h4>
+
+<ol>
+<li>GitHub:
+<a href="https://github.com/lennylxx/ipv6-hosts">lennylxx/ipv6-hosts</a>
+或者直接点击<a href="https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts">https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts</a>，然后将所有内容复制到对应系统的文件内即可，如果对应文件夹没有操作权限，可以将其复制到桌面的一个文本文档内，然后命名为hosts(没有扩展名)，然后拷贝到对应文件夹内即可；</li>
+<li>laod博客<br/>
+访问laod博客 <a href="https://laod.cn/hosts/ipv6-hosts.html">https://laod.cn/hosts/ipv6-hosts.html</a>，直接下载修改好的hosts文件。</li>
+</ol>
+
+<h4 id="toc_9">可能出现的问题</h4>
+
+<ul>
+<li><p>该项目中的ip地址可能包含一些本可以正常访问的地址，诸如：Apple苹果官网，使用该hosts可能使得本可以快速访问的网址访问速度变慢、或者无法访问，如果对其中的一些网址不需要通过ipv6访问，请加<code>#</code>注释该行；</p></li>
+<li><p>不同系统因为支持的编码格式以及换行符不同，hosts文件理论上是不能通用的，比如直接从Windows系统拷贝hosts文件到Linux系统中，是不能使用的，但前面提到的复制粘贴、另存新文件是没有问题的。</p></li>
+</ul>
+
+<p>附：<a href="https://github.com/racaljk/hosts/wiki/%E5%85%B3%E4%BA%8E%E4%B8%AD%E5%9B%BD%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91">关于中国的互联网</a><br/>
+<img src="https://res.cloudinary.com/regulus/image/upload/v1547129839/Github/about_CN_Internet.jpg" alt=""/></p>
+
+</div></body>
+
+</html>
