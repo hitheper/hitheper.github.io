@@ -39,3 +39,6 @@
 - 添加 hithesis、hithesis-alpha 哈工大LaTeX论文模板链接
 - 添加 LabXing Paper论文查找下载、LetPub最新SCI影响因子查询、地球风图 等链接
 - 添加 [不蒜子](http://busuanzi.ibruce.info/) 站点计数
+
+### 20190110 Tan
+- 在技术交流板块，添加“校园网ipv6-hosts指南”页面
