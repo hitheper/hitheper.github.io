@@ -6,11 +6,11 @@
 [TOC]
 
 ### 首先，什么是ipv6？
-ipv6简单来说就是“互联网协议版本6”，我们目前广泛使用的是ipv4，关于其详细介绍可以参考百度或者以下链接-[ipv6-用不完的门牌号](http://www.edu.cn/info/ip6/zs/v6/201201/t20120113_731784.shtml)
+ipv6简单来说就是“互联网协议版本6”，我们目前广泛使用的是ipv4，关于其详细介绍可以参考百度或者以下链接：[ipv6-用不完的门牌号](http://www.edu.cn/info/ip6/zs/v6/201201/t20120113_731784.shtml)。
 ### 什么是hosts文件？
-目前我们的万维网依赖[DNS](https://baike.baidu.com/item/dns/427444?fr=aladdin)系统来使各主机、终端之间方便的互联，而hosts文件简单来说就是一个将网址域名与对应ip地址建立关联的一个本地文件，详情可以参考[百度百科-hosts](https://baike.baidu.com/item/hosts/10474546?fr=aladdin)
+目前我们的万维网依赖[DNS](https://baike.baidu.com/item/dns/427444?fr=aladdin)系统来使各主机、终端之间方便的互联，而hosts文件简单来说就是一个将网址域名与对应ip地址建立关联的一个本地文件，详情可以参考[百度百科-hosts](https://baike.baidu.com/item/hosts/10474546?fr=aladdin)。
 ### 为什么要使用ipv6？
-ipv6对于我们普通用户来说，两个简单的用途：1. **科.学.上.网**，毕竟科研、学习离不开Google，YouTube等视频网站也有很多高质量的视频资源，使用Facebook等社交媒体与国外同学沟通交流；2. 访问六维等pt站点，高速下载影视资源(但请自辨版权)，而这些pt站点只能通过ipv6访问; 3. 访问一些ipv6直播站，可以访问一些ipv6直播服务，观看电视节目......
+ipv6对于我们普通用户来说，两个简单的用途：**1. 科.学.上.网**，毕竟科研、学习离不开Google，YouTube等视频网站也有很多高质量的视频资源，使用Facebook等社交媒体与国外同学沟通交流；**2. 访问六维等pt站点**，高速下载影视资源(但请自辨版权)，而这些pt站点只能通过ipv6访问; **3. 访问一些ipv6直播站**，可以访问一些ipv6直播服务，观看电视节目......
 ### 如何使用ipv6？
 其实，**中国教育和科研计算机网CERNET**早就接入并支持了ipv6，而窝工又是CERNET的重要节点，所以在窝工校园网范围内是已经支持ipv6的，但使用ipv6还需要路由器、终端设备的支持。
 
@@ -22,8 +22,8 @@ ipv6对于我们普通用户来说，两个简单的用途：1. **科.学.上.�
 
 窝工的ipv4/ipv6地址段，可以通过[网络中心主页查询](http://ito.hit.edu.cn/wlgl/list.htm)查询。
 
-此时，Windows用户可以使用命令```ipconfig /all```(Linux、macOS用户```ifconfig```)来查看本机是否获取了ipv6地址，也可以使用ipv6测试站点来判断是否已经成功接入ipv6网络：[ipv6-test](http://www.test-ipv6.com/)
-测试通过如图所示：
+此时，Windows用户可以使用命令```ipconfig /all```(Linux、macOS用户```ifconfig```)来查看本机是否获取了ipv6地址；
+也可以使用ipv6测试站点来判断是否已经成功接入ipv6网络：[ipv6-test](http://www.test-ipv6.com/)，测试通过如图所示：
 ![](https://res.cloudinary.com/regulus/image/upload/v1547126528/Github/ipv6-test.jpg)
 
 ### 借助ipv6-hosts实现 科.学.上.网
@@ -36,8 +36,6 @@ ipv6对于我们普通用户来说，两个简单的用途：1. **科.学.上.�
 - iPhone（iOS）系统hosts位于 ```/etc/hosts```
 - Linux系统hosts位于 ```/etc/hosts```
 绝大多数Unix系统都是在 ```/etc/hosts```
-
-
 
 #### 修改hosts后生效方法
 - Windows 开始 -> 运行 -> 输入cmd -> 在命令行窗口输入
@@ -67,7 +65,5 @@ ipv6对于我们普通用户来说，两个简单的用途：1. **科.学.上.�
 - 不同系统因为支持的编码格式以及换行符不同，hosts文件理论上是不能通用的，比如直接从Windows系统拷贝hosts文件到Linux系统中，是不能使用的，但前面提到的复制粘贴、另存新文件是没有问题的。
 
 
-
 附：[关于中国的互联网](https://github.com/racaljk/hosts/wiki/%E5%85%B3%E4%BA%8E%E4%B8%AD%E5%9B%BD%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91)
 ![](https://res.cloudinary.com/regulus/image/upload/v1547129839/Github/about_CN_Internet.jpg)
-
