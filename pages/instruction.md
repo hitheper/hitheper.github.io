@@ -1,13 +1,13 @@
 # 导航页面使用说明
-###### 如果网站的有些条目你打不看，很可能是你没有[翻墙](http://hithep.science/posts/fan_qiang.md.html)!
-###### 如果网站的有些条目你打不看，很可能是你没有[翻墙](http://hithep.science/posts/fan_qiang.md.html)!
-###### 如果网站的有些条目你打不看，很可能是你没有[翻墙](http://hithep.science/posts/fan_qiang.md.html)!
+###### 如果网站的有些条目你打不看，很可能是你没有[翻.墙](http://hithep.science/posts/fan_qiang.md.html)!
+###### 如果网站的有些条目你打不看，很可能是你没有[翻.墙](http://hithep.science/posts/fan_qiang.md.html)!
+###### 如果网站的有些条目你打不看，很可能是你没有[翻.墙](http://hithep.science/posts/fan_qiang.md.html)!
 `如果这个网站对你有帮助，请一起加入我们，在这里添加更多有用的信息，谢谢！`
 ## 如何添加条目
 `在修改之前，请务必确保你已经了解git的工作原理或者有git使用经验，避免破坏原有数据。`
 请先申请自己的github账号，然后fork这个项目，提交pull requrest或者branch。详细方法请参考git的教程。
 ---------
- #### 如何修改index.html
+#### 如何修改index.html
 1. 下载并安装git
 2. 在本地新建一个目录，打开git bash
 3. 在新建的目录执行 git clone http://github.com/hitheper/hitheper.github.io
@@ -28,7 +28,7 @@
 #### 注意事项
 - 请保持网站风格一致，不要添加新的样式
 - 若无必要（链接失效错误等原因）不要随意删除项目。
-Welcome to the hitheper.github.io wiki
+Welcome to the [hitheper.github.io wiki](hitheper.github.io wiki)
 - 这是一个简单的导航页面，希望大家都来完善它。
 - 如果你知道这个github账号的密码，直接在线修改就可以了。
 - 如果你要做很多修改，最好在本地操作。
@@ -36,3 +36,7 @@ Welcome to the hitheper.github.io wiki
 
 
 >   赵荣 @20161209
+
+
+update：
+如果只是想简单添加一两个链接，可参考这个链接[GitHub网页端简单提交更改指南](/posts/easy_change.md.html)来简易快速的添加内容，但如果涉及更改内容较多，或者添加页面等情形，请使用上面的操作流程，以防出错。

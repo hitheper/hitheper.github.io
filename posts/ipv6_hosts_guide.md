@@ -67,3 +67,7 @@ ipv6对于我们普通用户来说，两个简单的用途：**1. 科.学.上.�
 
 附：[关于中国的互联网](https://github.com/racaljk/hosts/wiki/%E5%85%B3%E4%BA%8E%E4%B8%AD%E5%9B%BD%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91)
 ![](https://res.cloudinary.com/regulus/image/upload/v1547129839/Github/about_CN_Internet.jpg)
+
+
+
+20190110

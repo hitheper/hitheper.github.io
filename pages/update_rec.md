@@ -43,8 +43,11 @@
 ### 20190110 Tan
 - 在技术交流板块，添加“校园网ipv6-hosts指南”页面
 
-### 20190115 Tan
+### 20190115-16 Tan
 - 利用title标签，添加“鼠标悬停显示说明文字”特性(参考自[百度知道](https://zhidao.baidu.com/question/97867762.html))
 示例：```<a href="http://zhidao.baidu.com/" target="_blank" title="点击跳转百度知道">我是一个超链接，把鼠标放过来看看会显示什么</a>```
 - 在“技术交流”板块添加了几个条目
 - 添加“网页名称”与地址栏logo
+- 更新copyright及CC协议
+- 更新关于页面
+- 添加"简单添加内容指南"页面
