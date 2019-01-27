@@ -69,5 +69,8 @@ ipv6对于我们普通用户来说，两个简单的用途：**1. 科.学.上.�
 ![](https://res.cloudinary.com/regulus/image/upload/v1547129839/Github/about_CN_Internet.jpg)
 
 
-
 20190110
+
+
+>20190127 UPDATE
+截止到2019年1月底，各种渠道获得ipv6的host，已经基本处于不可用状态，不过教育网/科研网内，通过ipv6可以直连Google(YouTube等站点可以打开，但视频不能正常播放)，也许过一段时间会恢复。
