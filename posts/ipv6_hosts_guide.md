@@ -74,3 +74,6 @@ ipv6对于我们普通用户来说，两个简单的用途：**1. 科.学.上.�
 
 >20190127 UPDATE
 截止到2019年1月底，各种渠道获得ipv6的host，已经基本处于不可用状态，不过教育网/科研网内，通过ipv6可以直连Google(YouTube等站点可以打开，但视频不能正常播放)，也许过一段时间会恢复。
+
+>20190221 UPDATE
+通过修改DNS等方式还是可以通过ipv6成功访问外站的，说明ipv6可能也没有完全被qiang（如果qiang已建好，DNS污染先行）。修改host的方法可以尝试自lennylxx/ipv6-hosts项目编译而来的新项目[available-ipv6-hosts](https://github.com/huangwenweia/available-ipv6-hosts)，其中由清华DNS解析出的host地址试用比较好(可以访问Google，但YouTube视频难以正常播放)，可以自行尝试。
