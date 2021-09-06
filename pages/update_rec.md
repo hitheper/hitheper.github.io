@@ -56,3 +56,7 @@
 ### 20200109 Tan
 - minor update
 - 在数据库栏添加 CODATA推荐基本物理学常数
+
+### 202109 Tan
+- 添加了：几个在线tex编辑器条目及说明；ROOT安装经验等；
+- 修改了：latex指南错误链接；homebrew、gcc、gfortran等说明。
