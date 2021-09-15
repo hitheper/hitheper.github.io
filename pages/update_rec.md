@@ -58,6 +58,6 @@
 - 在数据库栏添加 CODATA推荐基本物理学常数
 
 ### 202109 Tan
-- 添加了：几个在线tex编辑器条目及说明；ROOT安装经验等；
-- 修改了：latex指南错误链接；homebrew、gcc、gfortran等说明；
+- 添加了：几个在线tex编辑器条目及说明、ROOT安装经验、几个加速器对撞机及高能所链接等；
+- 修改了：latex指南错误链接、homebrew、gcc、gfortran、CSC等说明；
 - 为部分链接添加了下划线。
