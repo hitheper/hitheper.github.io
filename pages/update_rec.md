@@ -62,4 +62,5 @@
 - 修改了：latex指南错误链接、homebrew、gcc、gfortran、CSC等说明；
 - 为部分链接添加了下划线;
 - 添加了FeynCalc相关链接；
-- 添加修改了indico、蔻享学术相关链接。
+- 添加修改了indico、蔻享学术相关链接；
+- 添加Google可用镜像站、修正Google Scholar链接。
