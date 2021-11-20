@@ -64,3 +64,6 @@
 - 添加了FeynCalc相关链接；
 - 添加修改了indico、蔻享学术相关链接；
 - 添加Google可用镜像站、修正Google Scholar链接。
+
+### 202111 Tan
+- 添加了：Cuba、WebPlotDigitizer链接。
