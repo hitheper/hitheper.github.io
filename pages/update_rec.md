@@ -67,3 +67,8 @@
 
 ### 202111 Tan
 - 添加了：Cuba、WebPlotDigitizer链接。
+
+### 202209 Tan
+- 修改hithesis条目链接 https://github.com/dustincys/hithesis -> https://github.com/hithesis/hithesis ；
+- 添加 [石见石页 的个人主页](https://yanshuo.name/)；
+ps: 截至20220905，hithep.science [访问次数即将逾4000次](https://res.cloudinary.com/regulus/image/upload/v1662369243/blog/hithep.science%E8%AE%BF%E9%97%AE%E6%AC%A1%E6%95%B0%E6%88%AA%E5%9B%BE_2022-09-05_17.09.35_copy.jpg)，以此记录。
